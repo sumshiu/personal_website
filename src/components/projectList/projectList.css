@@ -1,0 +1,59 @@
+.port__projectList {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: var(--font-family);
+}
+
+/* .port__projectList div {
+  width: 200px;
+  height: 3px;
+  background: #000;
+  margin-bottom: 0.25rem;
+} */
+
+.port__projectList h1 {
+  font-size: 50px;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 1rem; /* Add some space below the heading */
+  padding-right: 10rem;
+}
+.port__projectList img {
+  width: 430px;
+  height: 430px;
+  margin-right: 5rem; /* Adjust the spacing between the image and the text */
+}
+
+.port__projectList-content {
+  font-size: 30px;
+  flex-direction: column;
+  display: flex;
+  width: 750px;
+}
+
+.port__projectList-content h2 {
+  padding-top: 5rem;
+  font-size: 30px;
+  margin: 0; /* Remove default margin */
+  justify-content: left;
+}
+
+.port__projectList-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Media queries to adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .port__projectList {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    height: auto;
+  }
+
+  .port__projectList img {
+    margin-right: 0;
+    margin-bottom: 2rem; /* Add some space below the image */
+  }
+}

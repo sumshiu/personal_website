@@ -1,0 +1,51 @@
+.port__about {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  font-family: var(--font-family);
+}
+
+.port__about img {
+  width: 430px;
+  height: 430px;
+  margin-right: 5rem; /* Adjust the spacing between the image and the text */
+}
+
+.port__about-content {
+  font-size: 30px;
+  flex-direction: column;
+  width: 750px;
+}
+
+.port__about-content h1 {
+  font-size: 50px;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 5rem; /* Add some space below the heading */
+  justify-content: left;
+}
+
+.port__about-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Media queries to adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .port__about {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .port__about img {
+    margin-right: 0;
+    margin-bottom: 2rem; /* Add some space below the image */
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .port__about-image {
+    width: 350px;
+    height: 300px;
+  }
+}

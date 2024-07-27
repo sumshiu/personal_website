@@ -1,0 +1,35 @@
+.port__contact {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: var(--font-family);
+}
+
+/* .port__contact div {
+    width: 200px;
+    height: 3px;
+    background: #000;
+    margin-bottom: 0.25rem;
+  } */
+
+.port__contact h1 {
+  font-size: 50px;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 1rem; /* Add some space below the heading */
+  padding-right: 5rem;
+}
+.port__contact a img {
+  width: 100px;
+  height: 100px;
+  margin-left: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.port__contact a img p {
+  font-size: 5px;
+  line-height: 30px;
+  margin-left: 5rem;
+}

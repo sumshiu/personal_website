@@ -1,0 +1,59 @@
+.port__header {
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.port__header-name {
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center; /* Center text horizontally */
+  padding: 30px;
+}
+
+.port__header-name p {
+  font-size: 100px;
+  margin: 0; /* Remove default margin */
+}
+
+.port__header-image {
+  width: 430px;
+  height: 430px;
+  margin-left: 5rem; /* Adjust as needed for spacing */
+}
+
+.port__header-summary {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .port__header-name p {
+    font-size: 80px;
+  }
+
+  .port__header-image {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .port__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .port__navbar {
+    padding: 2rem;
+  }
+
+  .port__navbar-sign {
+    display: none;
+  }
+
+  .port__navbar-menu_container {
+    top: 20px;
+  }
+}
